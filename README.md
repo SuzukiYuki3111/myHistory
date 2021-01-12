@@ -1,6 +1,6 @@
 # myHistory
 
-PHP_study => PHPの練習用のコード<br>
+PHP_study => レッスンでのPHPの練習用のコード<br>
 <br>
 portfolio => 作成物のコード<br>
 <br>
