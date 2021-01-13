@@ -1,0 +1,26 @@
+span{
+    font-family: 'Courgette', cursive;  /* googlefontsから引用 */
+    font-size: 50px;
+    margin-right: 500px;
+}
+
+.nav-list {
+    text-align: center;
+  }
+
+  .nav-list-item {
+    list-style: none;       /* listの点を消す*/
+    display: inline-block;  /* inline-blockインライン要素にしてで横並びにする*/
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  
+main{
+  text-align: center;
+}
+
+  footer{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+  }
