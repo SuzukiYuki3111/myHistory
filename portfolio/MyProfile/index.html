@@ -5,72 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Holtwood+One+SC&family=Permanent+Marker&family=Press+Start+2P&display=swap" 
+          rel="stylesheet">    
     <title>CourageStyle</title>
 </head>
 <body>
     <header>
             <div class="alert alert-dark" role="alert">
-                <ul class="nav-list">
-                    <span>CourageStyle</span>
-                    <li class="nav-list-item">
-                        home
+                <a href="https://fontmeme.com/ja/font-graffiti-style/">
+                    <img src="https://fontmeme.com/permalink/210115/4645ec5fc989471ab09cc0d51d5c1708.png" 
+                         alt="font-graffiti-style" 
+                         width="30%"
+                         height="30%"
+                         style="float: left;"
+                         border="0">
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-list-item">
-                        profile
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Profile</a>
                     </li>
-                    <li class="nav-list-item">
-                        career
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Career</a>
                     </li>
-                    <li class="nav-list-item">
-                        portfolio
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-list-item">
-                        contact
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
     </header>
     <main>
-        <div class="media">
-            <svg class="bd-placeholder-img mr-3"
-             width="180" 
-             height="180" 
-             xmlns="http://www.w3.org/2000/svg" 
-             preserveAspectRatio="xMidYMid slice" 
-             focusable="false"
-             role="img"
-             aria-label="Placeholder: 64x64">
-            
-             <title>Placeholder</title>
-            
-             <rect width="100%"
-              height="100%" 
-              fill="#868e96"/>
-              
-             <text x="20%"
-              y="20%" 
-              fill="#dee2e6" 
-              dy=".3em">かっちょいい写真</text>
-            
-            </svg>
-            <div class="media-body">
-                <h5 class="mt-0">プロフィール</h5>
-                    生年月日：1995年11月13日<br>
-                    出身地　：神奈川県茅ヶ崎市<br>
-                    趣味　　：ブレイクダンス<br>
-                    横浜医療専門学校を卒業後、柔道整復師の資格を取得。赤誠株式会社　鍼灸接骨院パッション勤務。（2017）<br>
-                    2020年12月、エンジニア・プログラマーの道を志し赤誠株式会社を退職。
-            </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-imgbd-placeholder-img-lg d-block w-100" 
+                         width="800" 
+                         height="400" 
+                         xmlns="http://www.w3.org/2000/svg" 
+                         preserveAspectRatio="xMidYMid slice" 
+                         focusable="false" 
+                         role="img" 
+                         aria-label="Placeholder: First slide">
+                         <title>かっちょいい写真</title>
+                         <rect width="100%" height="100%" fill="#777"/>
+                         <text x="50%" y="50%" fill="#555" dy=".3em">
+                            かっちょいい写真
+                         </text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" 
+                         width="800" 
+                         height="400" 
+                         xmlns="http://www.w3.org/2000/svg" 
+                         preserveAspectRatio="xMidYMid slice" 
+                         focusable="false" 
+                         role="img" 
+                         aria-label="Placeholder: Second slide">
+                         <title>かっこええ写真</title>
+                         <rect width="100%" height="100%" fill="#666"/>
+                         <text x="50%" y="50%" fill="#444" dy=".3em">
+                            かっこええ写真
+                         </text>
+                    </svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" 
+                         width="800" 
+                         height="400" 
+                         xmlns="http://www.w3.org/2000/svg" 
+                         preserveAspectRatio="xMidYMid slice" 
+                         focusable="false" 
+                         role="img" 
+                         aria-label="Placeholder: Third slide">
+                         <title>かこいい写真</title>
+                         <rect width="100%" height="100%" fill="#555"/>
+                         <text x="50%" y="50%" fill="#333" dy=".3em">
+                             Third slide
+                         </text>
+                    </svg>
+                </div>
+                </div>
+                <a class="carousel-control-prev" 
+                    href="#carouselExampleControls" 
+                    role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
         </div>
-        
-        
     </main>
     <footer>
         SuzukiYuki's Portfolio
     </footer>
+<!-- bootstrap javascriptプラグイン -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
