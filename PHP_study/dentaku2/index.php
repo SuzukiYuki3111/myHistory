@@ -9,25 +9,67 @@
         switch($ope){                   //四則演算
             
             case "+" :
-            $result = $a + $b ;
+            if(!ctype_digit($a) && !ctype_digit($b)){
+               
+                echo "数字を入れてね？<br>" ;
+                $result = "エラー" ;
+               
+                }else {
+                    $result = $a + $b ;
+                }
             break;
 
             case "-" :
-            $result = $a - $b ;
+                if(!ctype_digit($a) && !ctype_digit($b)){
+                   
+                    echo "数字を入れてね？<br>" ;
+                    $result = "エラー" ;
+                   
+                    }else {
+                        $result = $a - $b ;
+                    }
             break ;
             
             case "×" :
-            $result = $a * $b ;
+                if(!ctype_digit($a) && !ctype_digit($b)){
+                   
+                    echo "数字を入れてね？<br>" ;
+                    $result = "エラー" ;
+                   
+                    }else {
+                        $result = $a * $b ;
+                    }
             break ;
             
             case "÷" :
-            $result = $a / $b ;
+            if($b != 0){
+                
+                $result = $a / $b ;
+            
+            } elseif(!ctype_digit($a) && !ctype_digit($b)){
+                
+                echo "数字を入れてね？<br>" ;
+                $result = "エラー" ;
+            
+            }else{
+                
+                echo "0で割り切れません！<br>"  ;
+                $result = "エラー" ;
+            
+            }
             break ;
+
             default ; 
-            break ;   
+            break ; 
+            
+            if(!ctype_digit($a) && !ctype_digit($b)){
+                echo "数字を入れてね？" ;
+                $result = "エラー" ;
+             } 
+                
         }
         echo "結果：" .( $a .$ope .$b ."=" .$result ."<br>");
-    }
+    } 
 
 ?>
 
