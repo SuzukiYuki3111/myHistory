@@ -11,36 +11,37 @@
     <form action="index.php" method="POST">
 
     <?php
-    if(isset($_POST['result'])){
-        
-        $result = $_POST['result'] ;
-        $button = $_POST['button'] ;
-        $numA = $_POST['numA'] ;
-        $numB = $_POST['numB'] ;
-        
-        switch($button){
-            case ($button === "+"):
-            $disp = $numA + $numB ;
-            echo "<input type = 'text' value = '.$disp.'>" ;
-            break ;
-
-            case ($button === "-"):
-            $disp = $numA - $numB ;
-            echo "<input type = 'text' value = '.$disp.'>" ;
-            break ;
-        
-            case ($button === "×"):
-            $disp = $numA * $numB ;
-            echo "<input type = 'text' value = '.$disp.'>" ;
-            break ;
-
-            case ($button === "÷"):
-            $disp = $numA / $numB ;
-            echo "<input type = 'text' value = '.$disp.'>" ;
-            break ;
+        if(isset($_POST['result'])){
             
+            $result = $_POST['result'] ;
+            $button = $_POST['button'] ;
+            $numA = $_POST['numA'] ;
+            $numB = $_POST['numB'] ;
             
+            switch($button){
+                case ($button === "+"):
+                $disp = $numA + $numB ;
+                echo "<input type = 'text' value = '.$disp.'>" ;
+                break ;
+
+                case ($button === "-"):
+                $disp = $numA - $numB ;
+                echo "<input type = 'text' value = '.$disp.'>" ;
+                break ;
+            
+                case ($button === "×"):
+                $disp = $numA * $numB ;
+                echo "<input type = 'text' value = '.$disp.'>" ;
+                break ;
+
+                case ($button === "÷"):
+                $disp = $numA / $numB ;
+                echo "<input type = 'text' value = '.$disp.'>" ;
+                break ;
+                
+                
             }
+        }
     ?>
 
         <table>
