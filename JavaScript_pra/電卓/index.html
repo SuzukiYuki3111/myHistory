@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓　JS導入</title>
+</head>
+<body>
+    <h1>電卓作るぜよ？</h1>
+
+    <input type="text" id="result">
+
+    
+        <div>
+            <input type="button" value="7" onclick="edit(this)">
+            <input type="button" value="8" onclick="edit(this)">
+            <input type="button" value="9" onclick="edit(this)">
+            <input type="button" value="×" onclick="edit(this)">
+        </div>    
+    
+        <div>
+            <input type="button" value="4" onclick="edit(this)">
+            <input type="button" value="5" onclick="edit(this)">
+            <input type="button" value="6" onclick="edit(this)">
+            <input type="button" value="-" onclick="edit(this)">
+        </div>
+
+        <div>
+            <input type="button" value="1" onclick="edit(this)">
+            <input type="button" value="2" onclick="edit(this)">
+            <input type="button" value="3" onclick="edit(this)">
+            <input type="button" value="+" onclick="edit(this)">
+        </div>    
+
+        <div>
+            <input type="button" value="0" onclick="edit(this)">
+            <input type="button" value="." onclick="edit(this)">
+            <input type="button" value="=" onclick="calc()">
+        </div>
+
+
+    <script language = "javascript" type="text/javascript">
+        var result = document.getElementById ("result") ;
+        function edit(elem) {
+            result.value = result.value + elem.value ;
+        }
+        function calc(){
+            result.value = new Function("return" + result.value)() ;
+        }
+    </script>
+    </body>
+</html>
