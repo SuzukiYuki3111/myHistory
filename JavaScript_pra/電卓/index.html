@@ -15,7 +15,7 @@
             <input type="button" value="7" onclick="edit(this)">
             <input type="button" value="8" onclick="edit(this)">
             <input type="button" value="9" onclick="edit(this)">
-            <input type="button" value="×" onclick="edit(this)">
+            <input type="button" value="/" onclick="edit(this)">
         </div>    
     
         <div>
@@ -35,6 +35,7 @@
         <div>
             <input type="button" value="0" onclick="edit(this)">
             <input type="button" value="." onclick="edit(this)">
+            <input type="button" value="*" onclick="edit(this)">
             <input type="button" value="=" onclick="calc()">
         </div>
 
@@ -45,7 +46,7 @@
             result.value = result.value + elem.value ;
         }
         function calc(){
-            result.value = new Function("return" + result.value)() ;
+            result.value = new Function(" return " + result.value)() ;
         }
     </script>
     </body>
