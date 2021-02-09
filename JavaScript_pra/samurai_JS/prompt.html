@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommandBattle</title>
+</head>
+<body>
+    <script>
+        let enemy = 10 ;
+        let command ;   //数値は変わるためletを採用
+        let attack ;
+        
+        while (true) {
+            command = prompt("敵が現れた！(1.攻撃する 2.逃げる)") ;
+            attack = Math.floor(Math.random() * 10) ; // 1~10をランダムに生成
+
+            if (command === "1") {
+                enemy = enemy - attack ;
+                console.log(attack + "の攻撃！") ;
+                if(enemy <= 0){ // HPがゼロで終了
+                    console.log("敵を倒した。") ;
+                    break ;
+                }
+                console.log("敵の体力は残り" + enemy + "です。") ;
+            } else if (command === "2") {
+                console.log("無事に逃げました。") ;  
+                break ;      
+            } 
+        }
+        
+        console.log("ゲーム終了。") ;
+    </script>
+</body>
+</html>
